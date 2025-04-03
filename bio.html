@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+    <header>
+        <h1>About Me</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="bio.html">Bio</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="elevator.html">Elevator Pitch</a>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h2>Who I Am</h2>
+        <p>I am a Front-End Web Development Student with a passion for creating responsive, visually appealing, and user-friendly websites. I have a solid foundation in HTML, CSS, and JavaScript and am continuously improving my skills in web development and UI/UX design.
+
+As a student, I am dedicated to learning and applying modern web technologies to build real-world projects. I also have experience in graphic design and video editing, which helps me create engaging digital experiences.
+
+I am eager to grow as a developer and contribute to innovative projects that solve real-world problems.</p>
+    </section>
+<div id="loader" style="display: none;">
+  <div class="spinner"></div>
+</div>
+
+<style>
+  #loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  .spinner {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+      </style>
+<footer>
+    <p>&copy; 2025 Mzwakhe Obrey Mahaye. All rights reserved.</p>
+</footer>
+
+<style>
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+</style>
+</body>
+</html>
