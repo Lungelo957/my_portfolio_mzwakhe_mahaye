@@ -3,73 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - My Work</title>
+    <title>Portfolio - Mzwakhe Obrey Mahaye</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
-        <h1>My Portfolio</h1>
+        <h1>Mzwakhe Obrey Mahaye</h1>
+        <p>Aspiring Front-End Web Developer</p>
         <nav>
             <a href="index.html">Home</a>
             <a href="bio.html">Bio</a>
-            <a href="portfolio.html">Portfolio</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
             <a href="elevator.html">Elevator Pitch</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <section class="content">
-        <h2>My Projects</h2>
-        <ul>
-            <li>Project 1 - <a href="#">View</a></li>
-            <li>Project 2 - <a href="#">View</a></li>
-        </ul>
+    <section class="portfolio-container">
+        <div class="portfolio-item">
+            <img src="project1.jpg" alt="Project 1">
+            <div class="overlay">
+                <h3>Project 1</h3>
+                <p>A responsive website built with HTML, CSS, and JavaScript.</p>
+                <a href="project1-details.html">View Details</a>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="project2.jpg" alt="Project 2">
+            <div class="overlay">
+                <h3>Project 2</h3>
+                <p>An e-commerce platform developed using React and Node.js.</p>
+                <a href="project2-details.html">View Details</a>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="/assets/image 5.jpg" alt="Project 3">
+            <div class="overlay">
+                <h3>Project 3</h3>
+                <p>A mobile-friendly blog created with Bootstrap and PHP.</p>
+                <a href="project3-details.html">View Details</a>
+            </div>
+        </div>
     </section>
-<div id="loader" style="display: none;">
-  <div class="spinner"></div>
-</div>
 
-<style>
-  #loader {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-  }
-  .spinner {
-    border: 16px solid #f3f3f3;
-    border-top: 16px solid #3498db;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
-  }
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-        </style>
+    <footer>
+        <p>&copy; 2025 Mzwakhe Obrey Mahaye. All rights reserved.</p>
+    </footer>
 
-<footer>
-    <p>&copy; 2025 Mzwakhe Obrey Mahaye. All rights reserved.</p>
-</footer>
-
-<style>
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-</style>
 </body>
 </html>
