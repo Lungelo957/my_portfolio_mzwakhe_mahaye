@@ -3,98 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio.</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const loader = document.getElementById("loader");
+            setTimeout(() => {
+                loader.style.display = "none";
+            }, 1000); // Hide loader after 1 second
+        });
+    </script>
 </head>
 <body>
+
+    <!-- Loader -->
+    <div id="loader">
+        <div class="dots-loader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
 
     <header>
         <h1>Mzwakhe Obrey Mahaye</h1>
         <p>Aspiring Front-End Web Developer</p>
         <nav>
-            <a href="index.html">Home</a>
+            <a href="index.html" class="active">Home</a>
             <a href="bio.html">Bio</a>
             <a href="portfolio.html">Portfolio</a>
             <a href="elevator.html">Elevator Pitch</a>
         </nav>
     </header>
 
-    <section class="content">
-        <h2>Welcome to My Portfolio</h2>
-        <p>Explore my work and skills as a Front-End Web Developer.</p>
+    <!-- Split Hero Section -->
+    <section class="hero-split">
+        <div class="hero-text">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Explore my journey as a Front-End Web Developer and discover my projects, skills, and aspirations.</p>
+            <div class="hero-buttons">
+                <a href="portfolio.html" class="btn">View Portfolio</a>
+                <a href="bio.html" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="/assets/image 5.jpg" alt="Mzwakhe Obrey Mahaye">
+        </div>
     </section>
-    <div class="center-container">
-    <a href="portfolio.html" class="btn">View Portfolio</a>
-    </div>
 
-<!-- a loader part-->
-<div id="loader" style="display: none;">
-  <div class="spinner"></div>
-</div>
+    <!-- Featured Projects Section -->
+    <section class="featured-projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-container">
+            <div class="project-item">
+                <img src="/assets/project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>A responsive website built with HTML, CSS, and JavaScript.</p>
+                <a href="project1-details.html" class="btn">View Details</a>
+            </div>
+            <div class="project-item">
+                <img src="/assets/project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>An e-commerce platform developed using React and Node.js.</p>
+                <a href="project2-details.html" class="btn">View Details</a>
+            </div>
+        </div>
+    </section>
 
-<style>
-  #loader {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-  }
-  .spinner {
-    border: 16px solid #f3f3f3;
-    border-top: 16px solid #3498db;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
-  }
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-</style>
+    <!-- Contact Section -->
+    <section id="contact" style="padding: 20px; background-color: #e9e9e9; text-align: center;">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to reach out via email or phone.</p>
+        <ul style="list-style: none; padding: 0;">
+            <li style="margin: 10px 0;">
+                <span style="font-size: 20px; vertical-align: middle;">&#x1f4e7;</span>
+                <span style="margin-left: 10px;">lungelomahaye95@gmail.com</span>
+            </li>
+            <li style="margin: 10px 0;">
+                <span style="font-size: 20px; vertical-align: middle;">&#x1f4de;</span>
+                <span style="margin-left: 10px;">+27677091064</span>
+            </li>
+        </ul>
+        <a href="mailto:lungelomahaye95@gmail.com" class="btn">Send Message</a>
+    </section>
 
+    <footer>
+        <p>&copy; 2025 Mzwakhe Obrey Mahaye. All rights reserved.</p>
+    </footer>
 
-<!--home page images-->
-<div class="slider-container">
-    <div class="slider">
-        <img src="20241212_111919.jpg" class="slide active" alt="First Image">
-        <img src="jaap8h.jpg" class="slide" alt="Second Image">
-    </div>
-
-    <!-- Navigation Buttons -->
-    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-    <button class="next" onclick="moveSlide(1)">&#10095;</button>
-
-    <!-- Indicators -->
-    <div class="indicators">
-        <span class="dot active" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-    </div>
-</div>
-
-
-<!--Footer part-->
-<footer>
-    <p>&copy; 2025 Mzwakhe Obrey Mahaye. All rights reserved.</p>
-</footer>
-
-<style>
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-</style>
-    <script src="script.js"></script>
 </body>
 </html>
