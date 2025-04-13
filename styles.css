@@ -439,7 +439,7 @@ nav a:hover {
 /* Full-Screen Hero Section */
 .hero-fullscreen {
     height: 100vh;
-    background: url('/assets/image 4.jpg') no-repeat center center/cover;
+    background: url('assets/image 4.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
