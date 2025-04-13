@@ -1,9 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
     console.log("Website loaded successfully!");
-});
-document.addEventListener("DOMContentLoaded", function() {
-    console.log("Website loaded successfully!");
     hideLoader();
+
+    const navLinks = document.querySelectorAll("nav a");
+    const currentPage = window.location.pathname.split("/").pop().toLowerCase();
+
+    navLinks.forEach(link => {
+        const linkPage = link.getAttribute("href").toLowerCase();
+        if (linkPage === currentPage || (currentPage === "" && linkPage === "index.html")) {
+            link.classList.add("active");
+        }
+    });
 });
 
 function showLoader() {
