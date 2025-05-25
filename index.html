@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const loader = document.getElementById("loader");
+            setTimeout(() => {
+                loader.style.display = "none";
+            }, 1000); // Hide loader after 1 second
+        });
+    </script>
+</head>
+<body>
+
+    <!-- Loader -->
+    <div id="loader">
+        <div class="dots-loader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <header>
+        <h1>Mzwakhe Obrey Mahaye</h1>
+        <p>Aspiring Front-End Web Developer</p>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="bio.html">Bio</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="elevator.html">Elevator Pitch</a>
+        </nav>
+    </header>
+
+    <!-- Split Hero Section -->
+    <section class="hero-split">
+        <div class="hero-text">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Explore my journey as a Front-End Web Developer and discover my projects, skills, and aspirations.</p>
+            <div class="hero-buttons">
+                <a href="portfolio.html" class="btn">View Portfolio</a>
+                <a href="bio.html" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/image 5.jpg" alt="Mzwakhe Obrey Mahaye">
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="featured-projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-container">
+            <div class="project-item">
+                <img src="assets/project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>A responsive website built with HTML, CSS, and JavaScript.</p>
+                <a href="project1-details.html" class="btn">View Details</a>
+            </div>
+            <div class="project-item">
+                <img src="assets/project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>An e-commerce platform developed using React and Node.js.</p>
+                <a href="project2-details.html" class="btn">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="padding: 20px; background-color: #e9e9e9; text-align: center;">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to reach out via email or phone.</p>
+        <ul style="list-style: none; padding: 0;">
+            <li style="margin: 10px 0;">
+                <span style="font-size: 20px; vertical-align: middle;">&#x1f4e7;</span>
+                <span style="margin-left: 10px;">lungelomahaye95@gmail.com</span>
+            </li>
+            <li style="margin: 10px 0;">
+                <span style="font-size: 20px; vertical-align: middle;">&#x1f4de;</span>
+                <span style="margin-left: 10px;">+27677091064</span>
+            </li>
+        </ul>
+        <a href="mailto:lungelomahaye95@gmail.com" class="btn">Send Message</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mzwakhe Obrey Mahaye. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
