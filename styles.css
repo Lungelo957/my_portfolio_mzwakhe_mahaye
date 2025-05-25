@@ -15,7 +15,7 @@ header {
 
 nav a {
     margin: 10px;
-    color: rgb(77, 165, 50);
+    color: rgb(111, 161, 16);
     text-decoration: none;
     font-weight: bold;
 }
@@ -586,7 +586,7 @@ nav a:hover {
 }
 
 .hero-text h2:hover {
-    color: #1fa51b; /* Change text color on hover */
+    color: #c90303; /* Change text color on hover */
 }
 
 .hero-text p {
