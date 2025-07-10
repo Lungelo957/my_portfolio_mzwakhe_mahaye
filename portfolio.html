@@ -3,54 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Mzwakhe Obrey Mahaye</title>
+    <title>Portfolio - Mzwakhe Obrey Mahaye | Front-End Web Developer</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
+    <!-- Header -->
     <header>
-        <h1>Mzwakhe Obrey Mahaye</h1>
-        <p>Aspiring Front-End Web Developer</p>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="bio.html">Bio</a>
-            <a href="portfolio.html" class="active">Portfolio</a>
-            <a href="elevator.html">Elevator Pitch</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="header-content">
+            <div class="logo">
+                <h1>Mzwakhe Mahaye</h1>
+                <p>Front-End Developer</p>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="bio.html">About</a>
+                <a href="portfolio.html" class="active">Portfolio</a>
+                <a href="elevator.html">Pitch</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </header>
 
-    <section class="portfolio-container">
-        <div class="portfolio-item">
-            <img src="project1.jpg" alt="Project 1">
-            <div class="overlay">
-                <h3>Project 1</h3>
-                <p>A responsive website built with HTML, CSS, and JavaScript.</p>
-                <a href="project1-details.html">View Details</a>
-            </div>
-        </div>
-        <div class="portfolio-item">
-            <img src="project2.jpg" alt="Project 2">
-            <div class="overlay">
-                <h3>Project 2</h3>
-                <p>An e-commerce platform developed using React and Node.js.</p>
-                <a href="project2-details.html">View Details</a>
-            </div>
-        </div>
-        <div class="portfolio-item">
-            <img src="assets/image 5.jpg" alt="Project 3">
-            <div class="overlay">
-                <h3>Project 3</h3>
-                <p>A mobile-friendly blog created with Bootstrap and PHP.</p>
-                <a href="project3-details.html">View Details</a>
-            </div>
-        </div>
-    </section>
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <section class="portfolio-container">
+                <div class="section-title">
+                    <h2>My Portfolio</h2>
+                    <p>A collection of projects that showcase my skills and creativity in front-end development</p>
+                </div>
 
+                <div class="portfolio-grid">
+                    <!-- Project 1: E-Commerce Platform -->
+                    <div class="project-item">
+                        <img src="assets/image 1.jpg" alt="E-Commerce Platform">
+                        <div class="project-content">
+                            <h3>Modern E-Commerce Platform</h3>
+                            <p>A full-featured e-commerce solution with user authentication, product catalog, shopping cart, and secure payment processing. Built with modern React patterns and responsive design principles.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Redux</span>
+                                <span class="tech-tag">Stripe API</span>
+                                <span class="tech-tag">Styled Components</span>
+                                <span class="tech-tag">Node.js</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="#" class="btn btn-secondary">
+                                    <i class="fab fa-github"></i>
+                                    View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Task Management Dashboard -->
+                    <div class="project-item">
+                        <img src="assets/image 4.jpg" alt="Task Management Dashboard">
+                        <div class="project-content">
+                            <h3>Collaborative Task Manager</h3>
+                            <p>A comprehensive task management dashboard with real-time collaboration, drag-and-drop functionality, team management, and progress tracking features.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Vuex</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                                <span class="tech-tag">Chart.js</span>
+                                <span class="tech-tag">PWA</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="#" class="btn btn-secondary">
+                                    <i class="fab fa-github"></i>
+                                    View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Weather Analytics App -->
+                    <div class="project-item">
+                        <img src="assets/image 5.jpg" alt="Weather Analytics App">
+                        <div class="project-content">
+                            <h3>Weather Analytics Dashboard</h3>
+                            <p>An interactive weather application with location-based forecasts, data visualizations, and historical weather patterns analysis with a clean, modern interface.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">OpenWeather API</span>
+                                <span class="tech-tag">Sass</span>
+                                <span class="tech-tag">Responsive Design</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="#" class="btn btn-secondary">
+                                    <i class="fab fa-github"></i>
+                                    View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Portfolio Website -->
+                    <div class="project-item">
+                        <img src="assets/866c18acf41afa40d73b65ac29787d76_1710698362079_0.jpeg" alt="Developer Portfolio">
+                        <div class="project-content">
+                            <h3>Creative Developer Portfolio</h3>
+                            <p>A responsive portfolio website showcasing modern web development skills with smooth animations, dark mode toggle, and optimized performance.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">GSAP</span>
+                                <span class="tech-tag">Mobile First</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="index.html" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="#" class="btn btn-secondary">
+                                    <i class="fab fa-github"></i>
+                                    View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Landing Page Design -->
+                    <div class="project-item">
+                        <img src="assets/image 1.jpg" alt="Landing Page Design">
+                        <div class="project-content">
+                            <h3>SaaS Landing Page</h3>
+                            <p>A modern, conversion-optimized landing page for a SaaS product with smooth scrolling animations, call-to-action optimization, and A/B testing integration.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">Framer Motion</span>
+                                <span class="tech-tag">Styled Components</span>
+                                <span class="tech-tag">SEO Optimized</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="#" class="btn btn-secondary">
+                                    <i class="fab fa-github"></i>
+                                    View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: Mobile App UI -->
+                    <div class="project-item">
+                        <img src="assets/image 4.jpg" alt="Mobile App Interface">
+                        <div class="project-content">
+                            <h3>Mobile Banking App UI</h3>
+                            <p>A sleek mobile banking application interface built with React Native, featuring biometric authentication, transaction history, and real-time notifications.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Expo</span>
+                                <span class="tech-tag">Redux Toolkit</span>
+                                <span class="tech-tag">Async Storage</span>
+                                <span class="tech-tag">Biometric Auth</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="#" class="btn btn-secondary">
+                                    <i class="fab fa-github"></i>
+                                    View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills Summary -->
+                <div class="section-title" style="margin-top: 4rem;">
+                    <h2>Technologies I Work With</h2>
+                    <p>A comprehensive toolkit for modern web development</p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">⚛️</div>
+                        <h3>Frontend Frameworks</h3>
+                        <p>React, Vue.js, Angular, Next.js</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">📝</div>
+                        <h3>Languages</h3>
+                        <p>JavaScript, TypeScript, HTML5, CSS3</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🎨</div>
+                        <h3>Styling</h3>
+                        <p>Sass/SCSS, Tailwind CSS, Styled Components</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🔧</div>
+                        <h3>Tools & Build</h3>
+                        <p>Webpack, Vite, Git, npm, VS Code</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🌐</div>
+                        <h3>Backend & APIs</h3>
+                        <p>Node.js, Express, RESTful APIs, GraphQL</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">📱</div>
+                        <h3>Mobile & PWA</h3>
+                        <p>React Native, Progressive Web Apps</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Mzwakhe Obrey Mahaye. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Mzwakhe Obrey Mahaye. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://github.com" class="social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mzwakhe-obrey-mahaye-4474b3335" class="social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:lungelomahaye95@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+27677091064" class="social-link">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+                <p>Built with ❤️ and modern web technologies</p>
+            </div>
+        </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

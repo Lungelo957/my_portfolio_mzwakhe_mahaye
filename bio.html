@@ -3,66 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bio - Mzwakhe Obrey Mahaye</title>
+    <title>About - Mzwakhe Obrey Mahaye | Front-End Web Developer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
+    <!-- Header -->
     <header>
-        <h1>Mzwakhe Obrey Mahaye</h1>
-        <p>Aspiring Front-End Web Developer</p>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="bio.html" class="active">Bio</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="elevator.html">Elevator Pitch</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="header-content">
+            <div class="logo">
+                <h1>Mzwakhe Mahaye</h1>
+                <p>Front-End Developer</p>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="bio.html" class="active">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="elevator.html">Pitch</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </header>
 
-    <section class="bio-container">
-        <div class="bio-image">
-            <img src="assets/image 1.jpg" alt="Mzwakhe Obrey Mahaye">
-        </div>
-        <div class="bio-content">
-            <h2>About Me</h2>
-            <p>Hello! I'm Mzwakhe Obrey Mahaye, an aspiring Front-End Web Developer with a passion for creating visually appealing and user-friendly websites. I have a strong foundation in HTML, CSS, and JavaScript, and I'm constantly learning new technologies to enhance my skills.</p>
-            
-            <h3>Skills and Expertise</h3>
-            <ul>
-                <li>Proficient in HTML, CSS, JavaScript, Graphics design, and Video editing</li>
-                <li>Experience with version control tools like Git</li>
-                <li>Strong problem-solving and teamwork skills</li>
-            </ul>
-            
-            <h3>Education and Certifications</h3>
-            <p>Certified Graphics Designer and Video Editor, Udemy Academy</p>
-            <p>Certified Front-End Developer, ALX South Africa Academy</p>
-            
-            <h3>Professional Experience</h3>
-            <p>Worked on multiple freelance projects, including building responsive websites and e-commerce platforms.</p>
-            
-            <h3>Hobbies and Interests</h3>
-            <p>When I'm not coding, I enjoy photography, hiking, and exploring new technologies.</p>
-            
-            <h3>Achievements and Awards</h3>
-            <p>Loading...</p>
-            
-            <h3>Goals and Aspirations</h3>
-            <p>My goal is to become a full-stack developer and contribute to impactful projects that make a difference.</p>
-            
-            <h3>Call to Action</h3>
-            <p>Feel free to connect with me on <a href="https://www.linkedin.com/in/mzwakhe-obrey-mahaye-4474b3335" target="_blank">LinkedIn</a> or send me an email at <a href="mailto:lungelomahaye95@gmail.com">lungelomahaye95@gmail.com</a>.</p>
-            <a href="mailto:lungelomahaye95@gmail.com" class="cta">Get in Touch</a>
-        </div>
-    </section>
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <section class="bio-container">
+                <div class="bio-header">
+                    <div class="bio-image">
+                        <img src="assets/image 1.jpg" alt="Mzwakhe Obrey Mahaye">
+                    </div>
+                    <div class="section-title">
+                        <h2>About Me</h2>
+                        <p>Passionate Front-End Developer crafting digital experiences</p>
+                    </div>
+                </div>
 
+                <div class="bio-content">
+                    <h2>Hello, I'm Mzwakhe! 👋</h2>
+                    <p>I'm a passionate Front-End Web Developer with a keen eye for creating visually stunning and highly functional web applications. My journey in web development has been driven by a love for combining creativity with technology to solve real-world problems.</p>
+                    
+                    <p>With expertise in modern JavaScript frameworks and a deep understanding of user experience principles, I specialize in building responsive, accessible, and performant web applications that users love to interact with.</p>
+
+                    <h3>💻 Technical Expertise</h3>
+                    <ul>
+                        <li><strong>Frontend Technologies:</strong> React, Vue.js, JavaScript (ES6+), TypeScript</li>
+                        <li><strong>Styling & Design:</strong> CSS3, Sass/SCSS, Tailwind CSS, Bootstrap, Responsive Design</li>
+                        <li><strong>Development Tools:</strong> Git, Webpack, Vite, npm, VS Code</li>
+                        <li><strong>UI/UX Design:</strong> Figma, Adobe XD, Prototyping, User Research</li>
+                        <li><strong>Backend Basics:</strong> Node.js, Express, RESTful APIs, MongoDB</li>
+                        <li><strong>Other Skills:</strong> Graphics Design, Video Editing, SEO Optimization</li>
+                    </ul>
+                    
+                    <h3>🎓 Education & Certifications</h3>
+                    <p><strong>Front-End Development Certification</strong> - ALX South Africa Academy</p>
+                    <p>Comprehensive program covering modern web development practices, including React, JavaScript, and responsive design principles.</p>
+                    
+                    <p><strong>Graphics Design & Video Editing Certification</strong> - Udemy Academy</p>
+                    <p>Advanced training in visual design principles, Adobe Creative Suite, and multimedia content creation.</p>
+                    
+                    <h3>💼 Professional Experience</h3>
+                    <p><strong>Freelance Front-End Developer</strong> (2023 - Present)</p>
+                    <ul>
+                        <li>Developed responsive websites and web applications for various clients</li>
+                        <li>Collaborated with designers and backend developers on e-commerce platforms</li>
+                        <li>Implemented modern UI/UX best practices and accessibility standards</li>
+                        <li>Optimized website performance and SEO for better user engagement</li>
+                    </ul>
+                    
+                    <h3>🚀 What Drives Me</h3>
+                    <p>I believe in the power of clean, efficient code and beautiful, intuitive interfaces. Every project I work on is an opportunity to learn something new and push the boundaries of what's possible on the web. I'm particularly passionate about:</p>
+                    <ul>
+                        <li>Creating inclusive and accessible web experiences</li>
+                        <li>Staying up-to-date with the latest web technologies and trends</li>
+                        <li>Collaborating with teams to solve complex technical challenges</li>
+                        <li>Mentoring upcoming developers in the community</li>
+                    </ul>
+                    
+                    <h3>🌟 Personal Interests</h3>
+                    <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or enjoying photography and hiking. I believe in maintaining a healthy work-life balance and find that my hobbies often inspire creative solutions in my development work.</p>
+                    
+                    <h3>🎯 Future Goals</h3>
+                    <p>My goal is to evolve into a full-stack developer while maintaining my expertise in front-end technologies. I'm particularly interested in:</p>
+                    <ul>
+                        <li>Mastering advanced React patterns and state management</li>
+                        <li>Exploring cloud technologies and serverless architectures</li>
+                        <li>Contributing to impactful open-source projects</li>
+                        <li>Building products that make a positive difference in people's lives</li>
+                    </ul>
+                    
+                    <h3>📞 Let's Connect</h3>
+                    <p>I'm always excited to discuss new opportunities, collaborate on interesting projects, or simply chat about the latest in web development. Feel free to reach out!</p>
+                    <div style="margin-top: 2rem;">
+                        <a href="https://www.linkedin.com/in/mzwakhe-obrey-mahaye-4474b3335" target="_blank" class="btn btn-primary" style="margin-right: 1rem;">
+                            <i class="fab fa-linkedin"></i>
+                            Connect on LinkedIn
+                        </a>
+                        <a href="mailto:lungelomahaye95@gmail.com" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i>
+                            Send Email
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Mzwakhe Obrey Mahaye. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Mzwakhe Obrey Mahaye. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://github.com" class="social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mzwakhe-obrey-mahaye-4474b3335" class="social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:lungelomahaye95@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+27677091064" class="social-link">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+                <p>Built with ❤️ and modern web technologies</p>
+            </div>
+        </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

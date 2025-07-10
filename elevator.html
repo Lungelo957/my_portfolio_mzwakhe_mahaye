@@ -3,41 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elevator Pitch - Mzwakhe Obrey Mahaye</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Elevator Pitch - Mzwakhe Obrey Mahaye | Front-End Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
+    <!-- Header -->
     <header>
-        <h1>Mzwakhe Obrey Mahaye</h1>
-        <p>Aspiring Front-End Web Developer</p>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="bio.html">Bio</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="elevator.html" class="active">Elevator Pitch</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="header-content">
+            <div class="logo">
+                <h1>Mzwakhe Mahaye</h1>
+                <p>Front-End Developer</p>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="bio.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="elevator.html" class="active">Pitch</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </header>
 
-    <section class="elevator-pitch-container">
-        <h2>My Elevator Pitch</h2>
-        <p>
-            Hi, I'm Mzwakhe Obrey Mahaye, a passionate Front-End Web Developer. I specialize in creating responsive, user-friendly websites that deliver exceptional user experiences. With a strong foundation in HTML, CSS, and JavaScript, I bring ideas to life through clean and efficient code. My goal is to help businesses establish a strong online presence and connect with their audience effectively.
-        </p>
-        <div class="video-container">
-            <video controls width="100%" height="auto">
-                <source src="assets/Elevetor-video 1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <a href="mailto:lungelomahaye95@gmail.com" class="btn">Get in Touch</a>
-    </section>
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <section class="elevator-pitch-container">
+                <div class="section-title">
+                    <h2>My Elevator Pitch</h2>
+                    <p>A brief introduction to who I am and what I bring to the table</p>
+                </div>
 
+                <div class="bio-content">
+                    <h3>🚀 The 60-Second Pitch</h3>
+                    <p>Hi, I'm <strong>Mzwakhe Obrey Mahaye</strong>, a passionate Front-End Web Developer who transforms ideas into engaging digital experiences. With expertise in <strong>React, TypeScript, and modern CSS frameworks</strong>, I specialize in building responsive, user-centric web applications that not only look great but perform exceptionally.</p>
+                    
+                    <p>What sets me apart is my unique combination of technical skills and creative background in graphics design and video editing. This allows me to bridge the gap between design and development, ensuring that every project I work on delivers both beautiful aesthetics and seamless functionality.</p>
+                    
+                    <p>I'm currently seeking opportunities where I can contribute to innovative projects, collaborate with talented teams, and continue growing as a developer. Whether it's building a complex e-commerce platform or crafting a sleek landing page, I bring dedication, attention to detail, and a user-first mindset to every project.</p>
+                </div>
+
+                <div class="video-container">
+                    <video controls width="100%" height="auto" poster="assets/image 5.jpg">
+                        <source src="assets/Elevetor-video 1.mp4" type="video/mp4">
+                        <p>Your browser does not support the video tag. <a href="assets/Elevetor-video 1.mp4">Download the video</a> instead.</p>
+                    </video>
+                </div>
+
+                <div class="bio-content">
+                    <h3>💡 What I Offer</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">⚡</div>
+                            <h3>Fast Development</h3>
+                            <p>Efficient coding practices and modern tooling for rapid project delivery</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🎨</div>
+                            <h3>Design-to-Code</h3>
+                            <p>Seamless translation from design mockups to pixel-perfect implementations</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">📱</div>
+                            <h3>Mobile-First</h3>
+                            <p>Responsive design that works flawlessly across all devices and screen sizes</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🔧</div>
+                            <h3>Problem Solving</h3>
+                            <p>Analytical thinking and creative solutions for complex technical challenges</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bio-content">
+                    <h3>🎯 Ready to Work Together?</h3>
+                    <p>I'm excited about the opportunity to bring your ideas to life. Whether you're looking for someone to join your team full-time, need help with a specific project, or want to discuss a freelance opportunity, I'd love to hear from you.</p>
+                    
+                    <p>Let's schedule a conversation to discuss how I can contribute to your next project or team. I'm confident that my skills, enthusiasm, and commitment to quality will make a valuable addition to your organization.</p>
+                    
+                    <div style="margin-top: 2rem; text-align: center;">
+                        <a href="mailto:lungelomahaye95@gmail.com?subject=Let's discuss opportunities&body=Hi Mzwakhe, I'd like to discuss..." class="btn btn-primary" style="margin-right: 1rem;">
+                            <i class="fas fa-envelope"></i>
+                            Let's Talk
+                        </a>
+                        <a href="portfolio.html" class="btn btn-secondary">
+                            <i class="fas fa-code"></i>
+                            View My Work
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Mzwakhe Obrey Mahaye. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Mzwakhe Obrey Mahaye. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://github.com" class="social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mzwakhe-obrey-mahaye-4474b3335" class="social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:lungelomahaye95@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+27677091064" class="social-link">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+                <p>Built with ❤️ and modern web technologies</p>
+            </div>
+        </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
